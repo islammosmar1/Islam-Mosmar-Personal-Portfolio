@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Islam Mosmar Portfolio</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+            font-family: sans-serif;
+            text-decoration: none;
+            list-style: none;
+        }
+
+        .contanier::before {
+            content: '';
+            position: absolute;
+            height: 100%;
+            width: 50%;
+            top: 0;
+            left: 0;
+            background-color: #cf7f34;
+        }
+
+
+        ul li:hover ul.dropdown {
+            display: block;
+        }
+
+        /* animation */
+
+        .hero .logo,
+        .hero .content .div-text h1,
+        .hero .content .div-text h4,
+        .hero .content .div-text .btn {
+            position: relative;
+            top: 50px;
+            animation: slide-top .5s linear forwards;
+            opacity: 0;
+        }
+
+        .hero .logo {
+            animation-delay: 0.2s;
+        }
+
+        .hero .content .div-text h1 {
+            animation-delay: 0.5s;
+        }
+
+        .hero .content .div-text h4 {
+            animation-delay: 0.9s;
+        }
+
+        .hero .content .div-text .btn {
+            animation-delay: 1.8s;
+        }
+
+        @keyframes slide-top {
+            0% {
+                top: 50px;
+                opacity: 0;
+            }
+
+            100% {
+                top: 0;
+                opacity: 1;
+            }
+        }
+
+        .hero .content .div-text p {
+            position: relative;
+            left: 100px;
+            animation: slide-right .5s linear forwards;
+            animation-delay: 1.3s;
+            opacity: 0;
+        }
+
+        @keyframes slide-right {
+            0% {
+                left: 100px;
+                opacity: 0;
+            }
+
+            100% {
+                left: 0;
+                opacity: 1;
+            }
+        }
+
+        .hero .content .div-img img {
+            opacity: 0;
+            transform: scale(0.8);
+            animation: fade-img .5s linear forwards;
+            animation-delay: 2.1s;
+        }
+
+        @keyframes fade-img {
+            0% {
+                opacity: 0;
+                transform: scale(0.8);
+            }
+
+            100% {
+                opacity: 1;
+                transform: scale(1);
+            }
+        }
+    </style>
+</head> border
+<body>
+    <div class="contanier"
+        style=" width: 100%;height: 100vh;background-color: #f9f9f9;display: flex;justify-content: center;align-items: center;">
+        <div class="hero" style=" position: relative;z-index: 10;height: 85vh;width: 75%;
+        background: white ;backdrop-filter: blur(25px);border: 3px solid #f38f4d;
+        border-radius: 20px;box-shadow: -15px 17px 17px rgba(10, 10, 10, 0.15);padding: 0 40px 0 80px;">
+            <!-- Navigation bar -->
+            <nav style=" display: flex;justify-content: space-between;align-items: center;height: 70px;width: 100%;">
+                <a href="#" class="logo" style="    color: #3f3f3f;font-size: 45px;font-weight: bold;"></a>
+                <ul>
+                    <li style="display: inline-block;list-style: none;margin: 0 30px;">
+                        <a href="#about"
+                            style="    color: #242424;margin-left: 40px;text-transform: capitalize;transition: 0.3s;">Home</a>
+                    </li>
+                    <li style="display: inline-block;list-style: none;margin: 0 30px;"><a href="#resume"
+                            style="    color: #242424;margin-left: 40px;text-transform: capitalize;transition: 0.3s;">Projects</a>
+                    </li>
+                    <li style="display: inline-block;list-style: none;margin: 0 30px;"><a href="#projects"
+                            style="    color: #242424;margin-left: 40px;text-transform: capitalize;transition: 0.3s;">Educations</a>
+                    </li>
+
+                </ul>
+            </nav>
+            <!--content part-->
+            <div class="content"
+                style="display: flex;justify-content: space-between;align-items: center;padding-right: 40px;">
+                <div class="div-text" style="width: 40%;">
+                    <h1 style="margin-bottom: 20px;font-size: 50px;color: #fff;">Hi, I'am Islam</h1>
+                    <h4 style="color: #585858;font-size: 24px;margin-bottom: 10px;">Front-End Developer</h4>
+                    <p style=" color: #4f4f4f;margin-bottom: 50px;font-size: 18px;">
+                       I am a front-end developer who works on creating user-friendly, elegantly designed websites using HTML, CSS, JS, and REACT.JS.
+                    </p>
+                    <!--links part -->
+                    <a href="contact-me.html" class="btn" target="_blank"
+                        style="  padding: 15px 20px;background-color: #3a393a;border: 2px solid #424142;color: #fff;border-radius: 5px;font-weight: bold;margin-right: 30px;">
+                        Contact Me</a>
+                    <a href="about.html" class="btn" target="_blank"
+                        style="  padding: 15px 20px;background-color: #3d3d3d;border: 2px solid #424242;color: #fff;border-radius: 5px;font-weight: bold;margin-left: 30px;">
+                        About Me</a>
+                </div>
+                <!--image section-->
+                <section class="div-img" style=" width: 40%;">
+                    <img src="islam-img.jpg" alt="islam image "
+                        style="width: 100%; border-radius: 100%;margin-top: 50px;">
+                </section>
+            </div>
+            
+        </div>
+    </div>
+</body>
+
+</html>
